@@ -17,9 +17,9 @@ import (
 	_neturl "net/url"
 	"strings"
 
-	"github.com/free5gc/openapi"
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/openapi/models_nef"
+	"github.com/machi12/openapi"
+	"github.com/machi12/openapi/models"
+	"github.com/machi12/openapi/models_nef"
 )
 
 // Linger please
@@ -32,8 +32,9 @@ type TrafficInfluenceSubscriptionApiService service
 
 /*
 AfIdSubscriptionsGet read all of the active subscriptions for the AF
- * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param afId Identifier of the AF
+  - @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+  - @param afId Identifier of the AF
+
 @return []TrafficInfluSub
 */
 func (a *TrafficInfluenceSubscriptionApiService) AfIdSubscriptionsGet(ctx _context.Context, afId string) ([]models_nef.TrafficInfluSub, *_nethttp.Response, error) {
@@ -186,9 +187,10 @@ func (a *TrafficInfluenceSubscriptionApiService) AfIdSubscriptionsGet(ctx _conte
 
 /*
 AfIdSubscriptionsPost Creates a new subscription resource
- * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param afId Identifier of the AF
- * @param trafficInfluSub Request to create a new subscription resource
+  - @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+  - @param afId Identifier of the AF
+  - @param trafficInfluSub Request to create a new subscription resource
+
 @return TrafficInfluSub
 */
 func (a *TrafficInfluenceSubscriptionApiService) AfIdSubscriptionsPost(ctx _context.Context, afId string, trafficInfluSub models_nef.TrafficInfluSub) (models_nef.TrafficInfluSub, *_nethttp.Response, error) {
