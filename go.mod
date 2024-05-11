@@ -1,4 +1,4 @@
-module github.com/machi12/openapi
+module github.com/free5gc/openapi
 
 go 1.21
 

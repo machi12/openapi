@@ -17,8 +17,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/machi12/openapi"
-	"github.com/machi12/openapi/models"
+	"github.com/free5gc/openapi"
+	"github.com/free5gc/openapi/models"
 )
 
 // Linger please
@@ -33,10 +33,9 @@ type (
 
 /*
 EventExposureNotification
-  - @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-  - @param notificationUri
-  - @param request
-
+ * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param notificationUri
+ * @param request
 @return
 */
 func (a *DefaultCallbackApi) SmfEventExposureNotification(ctx context.Context, notificationUri string, request models.NsmfEventExposureNotification) (interface{}, *http.Response, error) {

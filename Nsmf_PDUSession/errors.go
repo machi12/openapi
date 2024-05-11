@@ -3,7 +3,7 @@ package Nsmf_PDUSession
 import (
 	"net/http"
 
-	"github.com/machi12/openapi/models"
+	"github.com/free5gc/openapi/models"
 )
 
 var (

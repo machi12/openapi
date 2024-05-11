@@ -11,7 +11,7 @@ package Nudr_DataRepository
 
 import (
 
-	// "github.com/machi12/openapi/models"
+	// "github.com/free5gc/openapi/models"
 	"context"
 	"fmt"
 	"io/ioutil"
@@ -19,7 +19,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/machi12/openapi"
+	"github.com/free5gc/openapi"
 )
 
 // Linger please

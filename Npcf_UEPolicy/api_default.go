@@ -17,7 +17,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/machi12/openapi/models"
+	"github.com/free5gc/openapi/models"
 )
 
 // Linger please
@@ -29,8 +29,8 @@ type DefaultApiService service
 
 /*
 DefaultApiService
-  - @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-  - @param polAssoId Identifier of a policy association
+ * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param polAssoId Identifier of a policy association
 */
 func (a *DefaultApiService) PoliciesPolAssoIdDelete(ctx context.Context, polAssoId string) (*http.Response, error) {
 	var (
@@ -165,9 +165,8 @@ func (a *DefaultApiService) PoliciesPolAssoIdDelete(ctx context.Context, polAsso
 
 /*
 DefaultApiService
-  - @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-  - @param polAssoId Identifier of a policy association
-
+ * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param polAssoId Identifier of a policy association
 @return PolicyAssociation
 */
 func (a *DefaultApiService) PoliciesPolAssoIdGet(ctx context.Context, polAssoId string) (models.PolicyAssociation, *http.Response, error) {
@@ -323,10 +322,9 @@ func (a *DefaultApiService) PoliciesPolAssoIdGet(ctx context.Context, polAssoId 
 
 /*
 DefaultApiService
-  - @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-  - @param polAssoId Identifier of a policy association
-  - @param policyAssociationUpdateRequest
-
+ * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param polAssoId Identifier of a policy association
+ * @param policyAssociationUpdateRequest
 @return PolicyUpdate
 */
 func (a *DefaultApiService) PoliciesPolAssoIdUpdatePost(ctx context.Context, polAssoId string, policyAssociationUpdateRequest models.PolicyAssociationUpdateRequest) (models.PolicyUpdate, *http.Response, error) {
@@ -514,9 +512,8 @@ func (a *DefaultApiService) PoliciesPolAssoIdUpdatePost(ctx context.Context, pol
 
 /*
 DefaultApiService
-  - @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-  - @param policyAssociationRequest
-
+ * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param policyAssociationRequest
 @return PolicyAssociation
 */
 func (a *DefaultApiService) PoliciesPost(ctx context.Context, policyAssociationRequest models.PolicyAssociationRequest) (models.PolicyAssociation, *http.Response, error) {

@@ -17,7 +17,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/machi12/openapi"
+	"github.com/free5gc/openapi"
 )
 
 // Linger please

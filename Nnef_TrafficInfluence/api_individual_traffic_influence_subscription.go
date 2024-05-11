@@ -16,9 +16,9 @@ import (
 	_neturl "net/url"
 	"strings"
 
-	"github.com/machi12/openapi"
-	"github.com/machi12/openapi/models"
-	"github.com/machi12/openapi/models_nef"
+	"github.com/free5gc/openapi"
+	"github.com/free5gc/openapi/models"
+	"github.com/free5gc/openapi/models_nef"
 )
 
 // Linger please
@@ -31,9 +31,9 @@ type IndividualTrafficInfluenceSubscriptionApiService service
 
 /*
 AfIdSubscriptionsSubscriptionIdDelete Deletes an already existing subscription
-  - @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-  - @param afId Identifier of the AF
-  - @param subscriptionId Identifier of the subscription resource
+ * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param afId Identifier of the AF
+ * @param subscriptionId Identifier of the subscription resource
 */
 func (a *IndividualTrafficInfluenceSubscriptionApiService) AfIdSubscriptionsSubscriptionIdDelete(ctx _context.Context, afId string, subscriptionId string) (*_nethttp.Response, error) {
 	var (
@@ -165,10 +165,9 @@ func (a *IndividualTrafficInfluenceSubscriptionApiService) AfIdSubscriptionsSubs
 
 /*
 AfIdSubscriptionsSubscriptionIdGet read an active subscriptions for the SCS/AS and the subscription Id
-  - @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-  - @param afId Identifier of the AF
-  - @param subscriptionId Identifier of the subscription resource
-
+ * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param afId Identifier of the AF
+ * @param subscriptionId Identifier of the subscription resource
 @return TrafficInfluSub
 */
 func (a *IndividualTrafficInfluenceSubscriptionApiService) AfIdSubscriptionsSubscriptionIdGet(ctx _context.Context, afId string, subscriptionId string) (models_nef.TrafficInfluSub, *_nethttp.Response, error) {
@@ -321,11 +320,10 @@ func (a *IndividualTrafficInfluenceSubscriptionApiService) AfIdSubscriptionsSubs
 
 /*
 AfIdSubscriptionsSubscriptionIdPatch Updates/replaces an existing subscription resource
-  - @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-  - @param afId Identifier of the AF
-  - @param subscriptionId Identifier of the subscription resource
-  - @param trafficInfluSubPatch
-
+ * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param afId Identifier of the AF
+ * @param subscriptionId Identifier of the subscription resource
+ * @param trafficInfluSubPatch
 @return TrafficInfluSub
 */
 func (a *IndividualTrafficInfluenceSubscriptionApiService) AfIdSubscriptionsSubscriptionIdPatch(ctx _context.Context, afId string, subscriptionId string, trafficInfluSubPatch models_nef.TrafficInfluSubPatch) (models_nef.TrafficInfluSub, *_nethttp.Response, error) {
@@ -502,11 +500,10 @@ func (a *IndividualTrafficInfluenceSubscriptionApiService) AfIdSubscriptionsSubs
 
 /*
 AfIdSubscriptionsSubscriptionIdPut Updates/replaces an existing subscription resource
-  - @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-  - @param afId Identifier of the AF
-  - @param subscriptionId Identifier of the subscription resource
-  - @param trafficInfluSub Parameters to update/replace the existing subscription
-
+ * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ * @param afId Identifier of the AF
+ * @param subscriptionId Identifier of the subscription resource
+ * @param trafficInfluSub Parameters to update/replace the existing subscription
 @return TrafficInfluSub
 */
 func (a *IndividualTrafficInfluenceSubscriptionApiService) AfIdSubscriptionsSubscriptionIdPut(ctx _context.Context, afId string, subscriptionId string, trafficInfluSub models_nef.TrafficInfluSub) (models_nef.TrafficInfluSub, *_nethttp.Response, error) {

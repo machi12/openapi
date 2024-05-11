@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/machi12/openapi/models"
+	"github.com/free5gc/openapi/models"
 )
 
 func TestSnssaiEqualFold(t *testing.T) {
@@ -42,3 +42,4 @@ func TestSnssaiEqualFold(t *testing.T) {
 		})
 	}
 }
+
