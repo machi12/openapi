@@ -16,8 +16,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/free5gc/openapi"
-	"github.com/free5gc/openapi/models"
+	"github.com/machi12/openapi"
+	"github.com/machi12/openapi/models"
 )
 
 // Linger please
@@ -29,9 +29,9 @@ type N1N2MessageTransferStatusNotificationCallbackDocumentApiService service
 
 /*
 N1N2MessageTransferStatusNotificationCallbackDocumentApiService Namf_Communication N1N2Transfer Failure Notification service Operation
- * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param ueContextId UE Context Identifier
- * @param subscriptionId Subscription Identifier
+  - @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+  - @param ueContextId UE Context Identifier
+  - @param subscriptionId Subscription Identifier
 */
 func (a *N1N2MessageTransferStatusNotificationCallbackDocumentApiService) N1N2TransferFailureNotification(ctx context.Context, n1N2MessageTransferNotificationUrl string, request models.N1N2MsgTxfrFailureNotification) (*http.Response, error) {
 	var (

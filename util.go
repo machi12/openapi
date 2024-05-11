@@ -3,7 +3,7 @@ package openapi
 import (
 	"strings"
 
-	"github.com/free5gc/openapi/models"
+	"github.com/machi12/openapi/models"
 )
 
 func SnssaiEqualFold(s, t models.Snssai) bool {
@@ -12,4 +12,3 @@ func SnssaiEqualFold(s, t models.Snssai) bool {
 	}
 	return false
 }
-

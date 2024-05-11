@@ -10,8 +10,8 @@
 package Nudr_DataRepository
 
 import (
-	"github.com/free5gc/openapi"
-	"github.com/free5gc/openapi/models"
+	"github.com/machi12/openapi"
+	"github.com/machi12/openapi/models"
 
 	"context"
 	"io/ioutil"
