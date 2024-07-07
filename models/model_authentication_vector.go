@@ -18,6 +18,6 @@ type AuthenticationVector struct {
 	IkPrime  string `json:"ikPrime" yaml:"ikPrime" bson:"ikPrime" mapstructure:"IkPrime"`
 	XresStar string `json:"xresStar" yaml:"xresStar" bson:"xresStar" mapstructure:"XresStar"`
 	Kausf    string `json:"kausf" yaml:"kausf" bson:"kausf" mapstructure:"Kausf"`
-	// NOTE: 增加HNMAC
+	// NOTE: Add HNMAC
 	HNMAC string `json:"hnMac" yaml:"hnMac" bson:"hnMac" mapstructure:"HnMac"`
 }
